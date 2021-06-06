@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #426696;
+  font-weight: 600;
+  font-size: 2.5rem;
+  opacity: 0.8;
+}
+
+h2,p {
+  color: #658ec6;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+h3 {
+  color: #426696;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+
+/*
+  Cores padrão do site
+*/
+
+:root{
+  --bgcolor1 : #65dfc9;
+  --bgcolo2 : #6cdbeb;
+}
+
+/*
+  Style Main
+  Definindo tamanho minio de altura de main
+*/
+
+
+main {
+  min-height: 100vh;
+  background: linear-gradient(to right top,#65dfc9,#6cdbeb);
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.glass {
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  min-height: 80vh;
+  width: 60%;
+  border-radius: 2rem;
+  z-index: 2; 
+  /*Add efeito de desfoque*/ 
+  backdrop-filter: blur(1rem);
+  display: flex;
+  
+}
+
+.circule1,.circule2{
+  /*Gradiente da direita para baixo*/
+  background:linear-gradient(to right bottom, rgba(255, 255, 255, 0.9),rgba(225, 255, 255,0.2));
+  width: 12rem;
+  height:12rem;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.circule1 {
+  top:2%;
+  right: 15%; 
+}
+
+.circule2 {
+  bottom: 2%; 
+  left: 15%;
+}
+.dashbord{
+  flex:2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  border-top-left-radius:2rem;
+  border-bottom-left-radius: 2rem ;
+  padding: 2%;
+}
+
+.link{
+  display: flex;
+  margin: 1rem 0;
+  align-items: center;
+}
+
+.link h2 {
+  padding: 0rem 1rem;
+}
+
+.games {
+  flex: 3;
+}
+
+.pro {
+  background: linear-gradient(to right top,#65dfc9,#6cdbeb);
+  border-radius: 2rem;
+  padding: 1rem;
+  color: white;
+  position:relative;
+}
+
+.pro h2 {
+  color: white;
+  width: 40%;
+  font-weight: 600;
+}
+
+.pro img {
+  position: absolute;
+  right: 0%;
+  top: -20%;
+}
+
+/*Games*/
+
+.status {
+  margin-bottom: 2rem;
+}
+
+.status input {
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  border:none;
+  width: 50%;
+  padding: 0.2rem;
+  border-radius: 2rem;
+}
+ 
+.games {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
