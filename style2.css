@@ -1,0 +1,141 @@
+/*Estilo Padrão*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    color: #426696;
+    font-weight: 600;
+    font-size: 2.5rem;
+    opacity: 0.8;
+  }
+  
+  h2,p {
+    color: #658ec6;
+    font-weight: 500;
+    opacity: 0.8;
+  }
+  
+  h3 {
+    color: #426696;
+    font-weight: 600;
+    opacity: 0.8;
+  }
+
+  /*Mobile First*/
+
+@media screen and (max-width: 320px) {
+    main {
+        background: linear-gradient(to right top, #65dfc9,#6cdbeb); 
+        padding: 1rem 0;
+    }
+
+    /*Fazendo efeito de Background de espelho*/
+    .glass {
+        background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+        backdrop-filter: blur(2rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-grow: inherit;
+        border-radius: 2rem;
+    }
+    .dashbord {
+        background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 4rem;
+        border-radius: 2rem;
+        padding: 1rem;
+    }
+
+    .user {
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .links {
+        margin-bottom: 2rem; 
+    }
+
+    .link {
+        display: flex;
+        align-items: center;
+        margin: 1rem 0;
+    }
+
+    .link:first-child{
+        margin-top: 0;
+    }
+
+    .link:last-child{
+        margin-bottom: 0;
+    }
+
+    .pro {
+        background: linear-gradient(to right top,#65dfc9,#6cdbeb);
+        border-radius: 2rem;
+        padding: 1rem;
+        color: white;
+        display: flex;
+        align-items: center;
+    }
+
+    .pro h2 {
+        color: white;
+        width: 50%;
+        font-weight: 600;
+    }
+
+    /*Games*/
+
+    .games {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .status {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .status input {
+        background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+        border:none;
+        width: 80%;
+        padding: 0.1rem;
+        border-radius: 2rem;
+      }
+
+    .card {
+        display: flex;
+        margin-bottom: 2rem;
+        align-items: center;
+        background: linear-gradient(to left top,rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5));
+        padding: 0.5rem;
+        border-radius: 1rem;
+        box-shadow: 6px 6px 10px rgba(122, 122, 122, 0.4);
+        justify-content: space-between;
+    }
+
+    .cards:last-child{
+        margin-bottom: 0;
+    }
+
+    .card-info{
+        margin-left: 1rem;
+    }
+
+    .progress { 
+        background: linear-gradient(to right top, #65dfc9,#6cdbeb); 
+        padding: 1rem 0;
+        height: 2px;
+    }
+
+}
+ 
