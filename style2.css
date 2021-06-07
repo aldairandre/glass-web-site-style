@@ -30,6 +30,7 @@
     main {
         background: linear-gradient(to right top, #65dfc9,#6cdbeb); 
         padding: 1rem 0;
+        font-family: "Poppins", sans-serif;
     }
 
     /*Fazendo efeito de Background de espelho*/
@@ -39,7 +40,6 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        flex-grow: inherit;
         border-radius: 2rem;
     }
     .dashbord {
@@ -120,7 +120,7 @@
         padding: 0.5rem;
         border-radius: 1rem;
         box-shadow: 6px 6px 10px rgba(122, 122, 122, 0.4);
-        justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     .cards:last-child{
