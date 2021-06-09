@@ -33,7 +33,7 @@
 
 /*Fazendo efeito de Background de espelho*/
 .glass {
-    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.1));
     backdrop-filter: blur(2rem);
     display: flex;
     width: 90%;
@@ -41,7 +41,30 @@
     flex-direction: column;
     justify-content: space-evenly;
     border-radius: 2rem;
+    z-index: 3;
 }
+
+.circule1,.circule2{
+    /*Gradiente da direita para baixo*/
+    background:linear-gradient(to right bottom, rgba(255, 255, 255, 0.9),rgba(225, 255, 255,0.1));
+    width: 30rem;
+    height:30rem;
+    border-radius: 50%;
+    position: absolute;
+    background-color: red;
+    z-index: 2;
+  }
+  
+  .circule1 {
+    top:2%;
+    right: 0%; 
+  }
+  
+  .circule2 {
+    bottom: -30%; 
+    left: -15%;
+  }
+
 .dashbord {
     background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
     display: flex;
@@ -51,6 +74,7 @@
     margin-bottom: 4rem;
     border-radius: 2rem;
     padding: 1rem;
+    z-index: 4;
 }
 
 .user {
