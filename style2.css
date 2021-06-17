@@ -24,6 +24,10 @@
     opacity: 0.8;
   }
 
+  body{
+    position: relative;
+  }
+
 /*ESTILO GERAL*/
   main {
     background: linear-gradient(to right top, #65dfc9,#6cdbeb); 
@@ -41,26 +45,25 @@
     flex-direction: column;
     justify-content: space-evenly;
     border-radius: 2rem;
-    z-index: 5;
 }
 
 .circule1,.circule2{
     /*Gradiente da direita para baixo*/
     background:linear-gradient(to right bottom, rgba(255, 255, 255, 0.9),rgba(225, 255, 255,0.1));
-    width: 30rem;
-    height:30rem;
+    width: 10rem;
+    height:10rem;
     border-radius: 50%;
-    position: absolute;
-    z-index: 2;
+    position: absolute; 
+    z-index: 3;
   }
   
   .circule1 {
-    top:2%;
-    right: 0%; 
+    top:0%;
+    right: 0%;
   }
   
   .circule2 {
-    bottom: -30%; 
+    bottom: 0%; 
     left: -15%;
   }
 
@@ -73,7 +76,6 @@
     margin-bottom: 4rem;
     border-radius: 2rem;
     padding: 1rem;
-    z-index: 4;
 }
 
 .user {
@@ -120,7 +122,6 @@
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    z-index: 6;
 }
 
 .status {
@@ -184,5 +185,8 @@
 @media screen and (max-width:425px){
    .card{
        flex-direction: column;
+   }
+   .circule1,.circule2{
+       display: none;
    }
 }
