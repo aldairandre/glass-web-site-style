@@ -190,3 +190,40 @@
        display: none;
    }
 }
+
+@media screen and (min-width:768px){
+  
+    .glass{
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .dashbord {
+      margin-bottom: 0px;
+    }
+}
+
+@media screen and (min-width:1188px){
+  main{
+    height: 100vh;
+    padding-top: 6%;
+  }
+  
+  .glass{
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1100px;
+  }
+
+  .dashbord {
+    margin-bottom: 0px;
+  }
+
+  .circule1{
+    right: 8%;
+  }
+  .circule2{
+    left: 5%;
+    bottom: 10%;
+  }
+}
