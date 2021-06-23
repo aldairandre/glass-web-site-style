@@ -1,4 +1,6 @@
-# glass-web-site-style
+# Glass web site 
+
+**ONILINE NO NETLIFY** : https://determined-easley-693eda.netlify.app/
 
 **Versão Desktop**
 
